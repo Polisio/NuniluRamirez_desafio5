@@ -10,15 +10,6 @@ a{
 	text-decoration: none;
 }
 
-header{
-	display: flex;
-	flex-direction: column;
-	min-height: 70px;
-	background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(200,225,255,1) 100%);	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-}
-
 h1, h2{
 	font-family: 'Henny Penny', cursive;
 	text-align: center;
@@ -51,18 +42,19 @@ footer{
 
 .navLink{
 	text-decoration: none;
-	color: rgb(101, 93, 198);
+	margin: 3px 8px;
 	font-family: 'Handlee', cursive;
+	color: rgb(101, 93, 198);
 	font-weight: 900;
-	padding: 3px 6px;
+	padding: 1px 6px;
 }
 
 .navLink:hover{
 	text-decoration: none;
 	font-weight: bold;
-	background-color: #655DC6;
+	background-color: #fce57e;
 	color: white;
-	padding: 3px 6px;
+	padding: 1px 6px;
 	transition: 0.5s;
 }
 
@@ -192,228 +184,97 @@ footer{
 	padding: 5%;
 }
 
-@media screen and (min-width: 540px) {
 
-	header{
-		width: 100%;
-		display: flex; 
-		flex-direction: row;
-		min-height: 70px;
-		background-color: #FCE021;
-		padding: 10px;
-		align-items: baseline;
-	}
+/* class bootstrap */
 
-	.navLink{
-		text-decoration: none;
-		color: rgb(101, 93, 198);
-		padding: 3px 6px;
-		}
-		
-	.navLink:hover{
-		text-decoration: none;
-		font-weight: bold;
-		background-color: #655DC6;
-		color: white;
-		padding: 3px 6px;
-		transition: 0.5s;
-	}
+.backnav{
+	background: rgb(253, 224, 33);
+}
 
-	.imag{
-		display: grid;
-		width: 100%;
-		grid-template-columns:1fr 1fr;
-		grid-template-areas: "div1 div2" "div3 div4";
-		justify-items: stretch;
-	}
+.bot-nav{
+	margin-bottom: 5px;
+}
 
-	.fomrCompra{
-		display: grid;
-		width: 100%;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 1fr;
-		grid-template-areas: "div1 div2";
-		justify-items: stretch;
-	}
+.just-nav{
+	display: flex;
+	justify-items: space-between;
+}
 
-	.div1{
-		grid-area: div1;
-	}
+.disp-link{
+	display: flex;
+	flex-direction: row;
+}
 
-	.div2{
-		grid-area: div2;
-	}
-	.div3{
-		grid-area: div3;
-	}
+.boton{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 30px;
+	background: #E31D93;
+	color: #ffffff;
+	font-family: 'Handlee', cursive;
+	font-size: .8rem;
+	font-weight: 600;
+	border: none;
+	transition: .3s ease all;
+	border-radius: 3px;
+	position: relative;
+	overflow: hidden;
+}
 
-	.div4{
-		grid-area: div4;
+.boton span{
+	position: relative;
+	z-index: 2;
+	transition: 2s;
+}
+
+.boton:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgb(101, 93, 198);
+	position: absolute;
+	z-index: 1;
+	top: -30px;
+	left: 0;
+	transition: .3s ease-in-out;
+}
+
+
+.boton:hover::after{
+	top: 0;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	.galeriaflex{
+		display: none;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 769px) {
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
+	.galeriaBoo{
+		display: none;
 	}
-
-	header{
-		width: 100%;
-		display: flex; 
-		flex-direction: row;
-		min-height: 70px;
-		background-color: #FCE021;
-		padding: 10px;
-		align-items: baseline;
-	}
-
-	.navLink{
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 1.2rem;
-	color: rgb(101, 93, 198);
-	padding: 3px 6px;
-	}
-	
-	.navLink:hover{
-		text-decoration: none;
-		font-weight: bold;
-		background-color: #655DC6;
-		color: white;
-		padding: 3px 6px;
-		transition: 0.5s;
-	}
-
-	.logo{
-		display: flex;
-		align-items: left;
-	}
-	
-	.logo img{
-		height: 90px;
-		margin-left: 30px;
-		margin-bottom: 10px;
-	}
-
-	.imag{
-		display: grid;
-		width: 100%;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "div1 div2" "div3 div4";
-		justify-items: stretch;
-	}
-
-	.formGrid{
-		display: grid;
-		width: 100%;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "div5 div6";
-		justify-items: stretch;
-		padding: 20px;
-	}
-
-	.mainUs{
-		display: grid;
-		width: 100%;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "div1 div2";
-		justify-items: space-between;
-		align-items: center;
-	}
-
-	.fomrCompra{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "div1 div2";
-		justify-items: stretch;
-		align-items: center;
-	}
-
-	.div1{ 
-		grid-area: div1;
-	}
-	.div2{
-		grid-area: div2;
-	}
-	.div3{
-		grid-area: div3;
-	}
-	.div4{
-		grid-area: div4;
-	}
-}
-
-@media screen and (min-width: 1025px) {
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-
-	.styleSection{
-		width: 300;
-		height: 500;
-		display: flex;
-		flex-direction: column;
-		background: transparent;
-		padding: 10px;
-	}
-
-	.imag{
-		display: grid;
-		width: 100%;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-areas: "div1 div2 div3 div4";
-		justify-items: stretch;
-	}
-
-	.formGrid{
-		display: grid;
-		width: 100%;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "div5 div6";
-		justify-items: stretch;
-		padding: 20px;
-	}
-
-	.mainUs{
-		display: grid;
-		width: 100%;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "div1 div2";
-		justify-items: space-evenly;
-		align-items: center;
-	}
-
-	.fomrCompra{
-		display: grid;
-		width: 100%;
-		padding: 20px;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "div1 div2";
-		justify-items: stretch;
-		align-items: center;
-	}
-
-	.div1{
-		grid-area: div1;
-	}
-	.div2{
-		grid-area: div2;
-	}
-	.div3{
-		grid-area: div3;
-	}
-	.div4{
-		grid-area: div4;
-	}
-	.div5{
-		grid-area: div5;
-	}
-	.div6{
-		grid-area: div6;
-	}
-
 }
