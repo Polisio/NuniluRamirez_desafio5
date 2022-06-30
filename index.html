@@ -1,150 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nunilu - Diseños Mágicos</title>
-	<link rel="shortcut icon" href="img/favicon.jpg">
-	<!-- Bootstrap -->
-	
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	
-	<!-- Mi CSS -->
-	<link rel="stylesheet" href="CSS/menuresp.css">
-</head>
-
-
-<body>
-	<header>
-
-		<!-- nav -->
-
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nunilu - Diseños Mágicos</title>
+		<link rel="shortcut icon" href="img/favicon.jpg">
+		<!-- Bootstrap -->
 		
-		<!-- <button type="button" class="btn btn-outline-secondary">Secondary</button>
-		<button type="button" class="btn btn-outline-success">Success</button>
-		<button type="button" class="btn btn-outline-danger">Danger</button>
-		<button type="button" class="btn btn-outline-warning">Warning</button>
-		<button type="button" class="btn btn-outline-info">Info</button>
-		<button type="button" class="btn btn-outline-light">Light</button>
-		<button type="button" class="btn btn-outline-dark">Dark</button> -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		
+		<!-- Mi CSS -->
+		<link rel="stylesheet" href="CSS/menuresp.css">
+	</head>
 
 
+	<body>
+		<header>
+			<!-- nav -->
 
+			<nav class="navbar navbar-expand-lg navbar-light backnav d-flex justify-content-between">
+				<div class="container-fluid">
+					<a id="logo" href="index.html" class="logo">
+						<img class="logo" src="./src/logo4.png" alt="Logo">
+						<img class="logo" src="./src/DisMag_2.png" alt="Diseños Mágicos">
+					</a>
+					<button class="navbar-toggler bot-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 disp-link">
+							<li class="nav-item">
+								<a href="views/Nosotros.html">
+									<button class="boton"><span>Nosotros</span></button>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="views/Galeria.html">
+									<button class="boton"><span>Galeria</span></button>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="views/Tienda.html">
+									<button class="boton"><span>Tienda</span></button>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="views/Contacto.html">
+									<button class="boton"><span>Contacto</span></button>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 
-
-
-
-
-
-
-
-
-
-
-		<nav class="navbar navbar-expand-lg navbar-light backnav d-flex justify-content-between">
-			<div class="container-fluid">
-				<a id="logo" href="index.html" class="logo">
-					<img class="logo" src="./src/logo4.png" alt="Logo">
-					<img class="logo" src="./src/DisMag_2.png" alt="Diseños Mágicos">
-				</a>
-				<button class="navbar-toggler bot-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 disp-link">
-						<li class="nav-item">
-							<a href="index.html">
-								<button class="boton"><span>Home</span></button>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="views/Nosotros.html">
-								<button class="boton"><span>Nosotros</span></button>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="views/Galeria.html">
-								<button class="boton"><span>Galeria</span></button>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="views/Tienda.html">
-								<button class="boton"><span>Tienda</span></button>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="views/Contacto.html">
-								<button class="boton"><span>Contacto</span></button>
-							</a>
-						</li>
-					</ul>
+			<!-- end nav -->
+		</header>
+		
+		<div class="styleHeader">
+			<img src="img/header.jpg" alt="">
+		</div>
+		
+		<main> 
+			<!-- carousel -->
+			<div id="carouselExampleSlidesOnly" class="carousel slide galeriaBoo" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="styleImgFlt d-block w-100" src="img/chilind.jpg" alt="chilindrina">
+					</div>
+					<div class="carousel-item">
+						<img class="styleImgFlt d-block w-100" src="img/mike.jpg" alt="Mike Wasowski">
+					</div>
+					<div class="carousel-item">
+						<img class="styleImgFlt d-block w-100" src="img/principe.jpg" alt="Prncipe azul">
+					</div>
+					<div class="carousel-item">
+						<img class="styleImgFlt d-block w-100" src="img/Mars.jpg" alt="Sailor Mars">
+					</div>
 				</div>
 			</div>
-		</nav>
 
-		<!-- end nav -->
-	</header>
-	
-	<div class="styleHeader">
-		<img src="img/header.jpg" alt="">
-	</div>
-	
-	<main> 
-		<!-- carousel -->
-		<div id="carouselExampleSlidesOnly" class="carousel slide galeriaBoo" data-bs-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="styleImgFlt d-block w-100" src="img/chilind.jpg" alt="chilindrina">
-				</div>
-				<div class="carousel-item">
-					<img class="styleImgFlt d-block w-100" src="img/mike.jpg" alt="Mike Wasowski">
-				</div>
-				<div class="carousel-item">
-					<img class="styleImgFlt d-block w-100" src="img/principe.jpg" alt="Prncipe azul">
-				</div>
-				<div class="carousel-item">
-					<img class="styleImgFlt d-block w-100" src="img/Mars.jpg" alt="Sailor Mars">
-				</div>
+			<!-- end carousel -->
+
+			<!-- galeria flex -->
+			<div class="imag">
+				<div class="styleSection div1">
+					<img class="styleImgFlt galeriaflex" src="img/chilind.jpg" alt="chilindrina">
+				</div> 
+				<div class="styleSection div2">
+					<img class="styleImgFlt galeriaflex" src="img/mike.jpg" alt="Mike Wasowski">
+				</div> 
+				<div class="styleSection div3">
+					<img class="styleImgFlt galeriaflex" src="img/principe.jpg" alt="Prncipe azul">
+				</div> 
+				<div class="styleSection div4">
+					<img class="styleImgFlt galeriaflex" src="img/Mars.jpg" alt="Sailor Mars">
+				</div> 
 			</div>
-		</div>
+			<!-- end galeria flex -->
 
-		<!-- end carousel -->
-
-		<!-- galeria flex -->
-		<div class="imag">
-			<div class="styleSection div1">
-				<img class="styleImgFlt galeriaflex" src="img/chilind.jpg" alt="chilindrina">
-			</div> 
-			<div class="styleSection div2">
-				<img class="styleImgFlt galeriaflex" src="img/mike.jpg" alt="Mike Wasowski">
-			</div> 
-			<div class="styleSection div3">
-				<img class="styleImgFlt galeriaflex" src="img/principe.jpg" alt="Prncipe azul">
-			</div> 
-			<div class="styleSection div4">
-				<img class="styleImgFlt galeriaflex" src="img/Mars.jpg" alt="Sailor Mars">
-			</div> 
-		</div>
-		<!-- end galeria flex -->
-
-		<div>
-			<h1>Tu sueño hecho disfraz</h1>
-			<p> En <b>Nunilu Diseños Mágicos</b>, nos encargamos de Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, illo! Quibusdam ipsa, tenetur debitis quaerat commodi velit magnam assumenda laudantium totam, sunt molestiae quo harum, alias voluptatum perferendis qui necessitatibus.
-			</p>
-		</div>
-	</main>
-	<footer>
-		<div>
-			<label class="label"><b>Visita nuestra tienda:</b></label>
-			<a class="footerMap" href="views/Contacto.html#Mapa">Mapa</a>
-		</div>
-		<div class="logoRedes">
-			<a href="https://www.facebook.com/Nunilu-Diseños-Mágicos-Oficial-101256029230490/" target="_blanc">
-			<img src="img/logoFB.png" alt=""></a>
-			<a href="https://www.instagram.com" target="_blanc">
-			<img src="img/logoIG.png" alt=""></a>
-		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+			<div>
+				<h1>Tu sueño hecho disfraz</h1>
+				<p> En <b>Nunilu Diseños Mágicos</b>, nos encargamos de Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, illo! Quibusdam ipsa, tenetur debitis quaerat commodi velit magnam assumenda laudantium totam, sunt molestiae quo harum, alias voluptatum perferendis qui necessitatibus.
+				</p>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<label class="label"><b>Visita nuestra tienda:</b></label>
+				<a class="footerMap" href="views/Contacto.html#Mapa">Mapa</a>
+			</div>
+			<div class="logoRedes">
+				<a href="https://www.facebook.com/Nunilu-Diseños-Mágicos-Oficial-101256029230490/" target="_blanc">
+				<img src="img/logoFB.png" alt=""></a>
+				<a href="https://www.instagram.com" target="_blanc">
+				<img src="img/logoIG.png" alt=""></a>
+			</div>
+		</footer>
+		<!-- Scrip js -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<!-- end Scrip js -->
+	</body>
 </html>
