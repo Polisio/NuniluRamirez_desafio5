@@ -6,6 +6,11 @@
 	box-sizing: border-box;
 }
 
+html{
+	position: relative;
+	min-height: 100%;
+}
+
 a{
 	text-decoration: none;
 }
@@ -28,11 +33,54 @@ p{
 	margin: 10px;
 }
 
+body{
+	margin: 0 auto 60px;
+}
+
+.headerNav{
+	display: flex;
+	width: 100%;
+	max-height: 120PX;
+	background-image: url(../src/bgheader.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#btn-menu{
+	display: none;
+}
+
+.bg-label{
+	display: flex;
+	background: transparent;
+	padding: 10px;
+	max-height: 92px;
+}
+
+.bg-label:hover{
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+
 footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: rgb(101, 93, 198);
 	display: flex;
 	flex-direction: inline;
 	min-height: 50px;
-	background: rgb(101, 93, 198);
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
@@ -160,7 +208,11 @@ footer{
 /* class bootstrap */
 
 .backnav{
-	background: rgb(253, 224, 33);
+	background-image: url(../src/bgheader.webp);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .bot-nav{
