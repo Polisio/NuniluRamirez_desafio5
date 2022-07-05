@@ -37,41 +37,23 @@ body{
 	margin: 0 auto 60px;
 }
 
-.headerNav{
+
+header{
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
 	width: 100%;
-	max-height: 120PX;
+	height: 100%;
+	padding: 10px;
+}
+
+.headerNav{
 	background-image: url(../src/bgheader.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-
-#btn-menu{
-	display: none;
-}
-
-
-
-.bg-label{
-	display: flex;
-	background: transparent;
-	padding: 10px;
-	max-height: 92px;
-}
-
-.bg-label:hover{
-	cursor: pointer;
-	background: rgba(0, 0, 0, 0.3);
-}
-
-.menu ul {
-	margin: 0;
-	list-style: none;
-	padding: 0;
-	display: flex;
-}
-
 
 footer{
 	position: absolute;
@@ -123,6 +105,7 @@ footer{
 .logo{
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 }
 
 .logo img{
@@ -210,11 +193,7 @@ footer{
 /* class bootstrap */
 
 .backnav{
-	background-image: url(../src/bgheader.webp);
 	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 }
 
 .bot-nav{
