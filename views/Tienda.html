@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="../CSS/menuresp.css">
 	</head>
 	<body>
-		<header>
+		<header class="headerNav">
 			<!-- nav -->
 
 			<nav class="navbar navbar-expand-lg navbar-light backnav d-flex justify-content-between">
@@ -69,14 +69,14 @@
 								<fieldset class="formStyle">
 								<legend>Info del disfraz</legend>
 								<label>Talla</label>
-								<select class="style" name="Talla">
+								<select class="style m-3" name="Talla">
 									<option value="Chica">Chica</option>
 									<option value="Mediana">Mediana</option>
 									<option value="Grande">Grande</option>
 									<option value="Extra Grande">Extra Grande</option>
 								</select>
 								<label for="Modelo">Modelo</label>
-								<select class="style" name="Modelo">
+								<select class="style m-3" name="Modelo">
 									<option value="Sysyn01">Vegeta</option>
 									<option value="Sysyn02">Gokú</option>
 								</select>
@@ -89,8 +89,10 @@
 									<option value="SuperS">Peluca Súper Sayayin</option>
 								</select>
 								<br>
+								<div class="m-3">
 									<button class="boton" type="reset"><span>Cancelar</span></button>
 									<button class="boton" type="submit"><span>Agregar</span></button>
+								</div>
 								</fieldset>
 						</form>
 				</div>
@@ -100,14 +102,14 @@
 						<fieldset class="formStyle">
 						<legend>Info del disfraz</legend>
 						<label>Talla</label>
-						<select class="style"  name="Talla">
+						<select class="style m-3"  name="Talla">
 							<option value="Chica">Chica</option>
 							<option value="Mediana">Mediana</option>
 							<option value="Grande">Grande</option>
 							<option value="Extra Grande">Extra Grande</option>
 						</select>
 						<label for="Modelo">Modelo</label>
-						<select class="style"  name="Modelo">
+						<select class="style m-3"  name="Modelo">
 							<option value="Prndsn01">Azúl</option>
 							<option value="Prndsn02">Rosa</option>
 						</select>
@@ -120,8 +122,10 @@
 							<option value="Cetro">Cetro</option>
 						</select>
 							<br>
-							<button class="boton" type="reset"><span>Cancelar</span></button>
-							<button class="boton" type="submit"><span>Agregar</span></button>
+							<div class="m-3">
+								<button class="boton" type="reset"><span>Cancelar</span></button>
+								<button class="boton" type="submit"><span>Agregar</span></button>
+							</div>
 						</fieldset>
 					</form>
 				</div>
@@ -131,14 +135,14 @@
 							<fieldset class="formStyle">
 								<legend>Info del disfraz</legend>
 							<label>Talla</label>
-							<select class="style" name="Talla" id="">
+							<select class="style m-3" name="Talla" id="">
 								<option value="Chica">Chica</option>
 								<option value="Mediana">Mediana</option>
 								<option value="Grande">Grande</option>
 								<option value="Extra Grande">Extra Grande</option>
 							</select>
 							<label for="Modelo">Modelo</label>
-							<select class="style" name="Modelo">
+							<select class="style m-3" name="Modelo">
 								<option value="Srnta01">Verde</option>
 								<option value="Srnta02">Morado</option>
 							</select>
@@ -150,8 +154,10 @@
 								<option value="Peluca">Peluca Roja</option>
 							</select>
 								<br>
-								<button class="boton" type="reset"><span>Cancelar</span></button>
-								<button class="boton" type="submit"><span>Agregar</span></button>
+								<div class="m-3">
+									<button class="boton" type="reset"><span>Cancelar</span></button>
+									<button class="boton" type="submit"><span>Agregar</span></button>
+								</div>
 							</fieldset>
 					</form>
 				</div>
@@ -161,14 +167,14 @@
 								<fieldset class="formStyle">
 								<legend>Info del disfraz</legend>
 								<label>Talla</label>
-								<select class="style" name="Talla">
+								<select class="style m-3" name="Talla">
 									<option value="Chica">Chica</option>
 									<option value="Mediana">Mediana</option>
 									<option value="Grande">Grande</option>
 									<option value="Extra Grande">Extra Grande</option>
 								</select>
 								<label for="Modelo">Modelo</label>
-								<select class="style" name="Modelo">
+								<select class="style m-3" name="Modelo">
 									<option value="Sysyn01">Hipo</option>
 									<option value="Sysyn02">Astrid</option>
 								</select>
@@ -181,8 +187,10 @@
 									<option value="Espada">Espada</option>
 								</select>
 								<br>
-								<button class="boton" type="reset"><span>Cancelar</span></button>
-								<button class="boton" type="submit"><span>Agregar</span></button>
+								<div class="m-3">
+									<button class="boton" type="reset"><span>Cancelar</span></button>
+									<button class="boton" type="submit"><span>Agregar</span></button>
+								</div>
 								</fieldset>
 						</form>
 				</div>
@@ -190,20 +198,22 @@
 		</main>
 		
 		<div class="container">
-			<div class="row">
-				<div class="col-11 col-md-6">
-					<fieldset class="formStyle">
-						<legend>Información de compra:</legend>
-						<label for="name">Nombre:</label>
-						<input type="text" id="name" placeholder="Laura Marcela García Corcuera y Rivadeneriera">
-						<br>
-						<label for="email">Email</label>
-						<input type="email" id="email" placeholder="correo@algo.com">
-						<br>
-						<label for="Celular">Teléfono:</label>
-						<input type="number" id="Celular" placeholder="3366554422">
-					</fieldset>
+			<form class="row g-3 mt-3">
+				<div class="col-11">
+					<label for="nombre" class="formStyle">Nombre</label>
+					<input type="text" class="form-control" id="nombre" placeholder="Laura Marcela García Corcuera y Rivadeneira">
 				</div>
+				<div class="col-11">
+					<label for="email" class="formStyle">E-mail</label>
+					<input type="email" class="form-control" id="email" placeholder="layoyis@mail.com">
+				</div>
+				<div class="col-11">
+					<label for="telefono" class="formStyle">Teléfono</label>
+					<input type="text" class="form-control" id="telefono" placeholder="3355441166">
+				</div>
+			</form>
+			<br>
+			<div class="row">
 				<div class="col-11 col-md-6">
 					<fieldset class="formStyle">
 						<legend>Info de envío</legend>
@@ -225,7 +235,7 @@
 				<div>
 					<label class="formStyle" for="mensaje"> Mensaje</label>
 					<br>
-					<textarea class="textZone" name="" id="mensaje" cols="30" rows="10"></textarea>
+					<textarea class="textZone col-11" name="" id="mensaje" cols="30" rows="10"></textarea>
 					<button class="botonSend" type="submit"><span>Enviar</span></button>
 				</div>
 			</div>

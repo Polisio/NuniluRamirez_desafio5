@@ -37,41 +37,23 @@ body{
 	margin: 0 auto 60px;
 }
 
-.headerNav{
+header{
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
 	width: 100%;
-	max-height: 120PX;
+	height: 100%;
+	padding: 10px;
+	background: rgb(253, 224, 33);
+}
+
+.headerNav{
 	background-image: url(../src/bgheader.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-
-#btn-menu{
-	display: none;
-}
-
-
-
-.bg-label{
-	display: flex;
-	background: transparent;
-	padding: 10px;
-	max-height: 92px;
-}
-
-.bg-label:hover{
-	cursor: pointer;
-	background: rgba(0, 0, 0, 0.3);
-}
-
-.menu ul {
-	margin: 0;
-	list-style: none;
-	padding: 0;
-	display: flex;
-}
-
 
 footer{
 	position: absolute;
@@ -90,24 +72,6 @@ footer{
 	font-weight: bold;
 }
 
-.navLink{
-	text-decoration: none;
-	margin: 3px 8px;
-	font-family: 'Handlee', cursive;
-	color: rgb(101, 93, 198);
-	font-weight: 900;
-	padding: 1px 6px;
-}
-
-.navLink:hover{
-	text-decoration: none;
-	font-weight: bold;
-	background-color: #fce57e;
-	color: white;
-	padding: 1px 6px;
-	transition: 0.5s;
-}
-
 .styleHeader{
 	display: flex;
 	align-items: center;
@@ -123,6 +87,7 @@ footer{
 .logo{
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 }
 
 .logo img{
@@ -161,7 +126,7 @@ footer{
 	flex-direction: column;
 	background: transparent;
 	padding: 10px;
-	justify-items:	space-between;
+	justify-items:	center;
 }
 
 .styleImgFlt{
@@ -174,11 +139,10 @@ footer{
 
 .formStyle{
 	font-family: 'Handlee', cursive;
-	padding: 20px;
+	color: rgb(77, 67, 226);
+	padding: 0 10px;
 	width: 100%;
-	background: transparent;
-	border: none;
-	margin: 10px auto;
+	margin: 10px 0;
 	display: flex inline-block;
 }
 
@@ -189,6 +153,7 @@ footer{
 .accesorios{
 	display: none;
 }
+
 .check:checked + .accesorios{
 	font-family: 'Original Surfer', cursive;
 	color: #4f4d63;
@@ -197,7 +162,6 @@ footer{
 
 .textZone{
 	display: flex;
-	margin: 10px;
 }
 
 .mapa{
@@ -210,11 +174,7 @@ footer{
 /* class bootstrap */
 
 .backnav{
-	background-image: url(../src/bgheader.webp);
 	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 }
 
 .bot-nav{
