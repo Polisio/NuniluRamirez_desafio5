@@ -1,18 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Handlee&family=Henny+Penny&family=Merienda:wght@400;700&family=Original+Surfer&display=swap");
-.styleHeader {
-  display: flex;
-  align-items: center;
-  background: #fde021; }
-  .styleHeader img {
-    width: 100%;
-    height: 40%;
-    opacity: 60%;
-    margin-bottom: 20px; }
+html {
+  position: relative;
+  min-height: 100%; }
 
-.logo {
+a {
+  text-decoration: none; }
+
+h1, h2 {
+  font-family: "Handlee", cursive;
+  text-align: center;
+  color: #e01f8f;
+  font-size: 1.6rem;
+  margin: 10px; }
+
+p {
+  font-family: "Original Surfer", cursive;
+  text-align: justify;
+  font-size: 1rem;
+  color: #4f4d63;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px; }
+
+body {
+  margin: 0 auto 60px; }
+
+header {
   display: flex;
-  align-items: center; }
-  .logo img {
-    height: 80px;
-    margin-right: 10px;
-    margin-bottom: 10px; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: #fde021; }

@@ -1,0 +1,47 @@
+//html general
+
+html{
+	position: relative;
+	min-height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1, h2{
+	font-family: $principal;
+	text-align: center;
+	color: $clr-fiusha;
+	font-size: 1.6rem;
+	margin: 10px;
+}
+
+p{
+	font-family: $parrafos;
+	text-align: justify;
+	font-size: 1rem;
+	color: $clr-gris;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 10px;
+}
+
+// body
+
+body{
+	margin: 0 auto 60px;
+}
+
+// header
+
+header{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background: $clr-amarillo;
+}
