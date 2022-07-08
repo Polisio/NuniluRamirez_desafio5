@@ -1,0 +1,73 @@
+//formularios
+.formStyle{
+	font-family: $principal;
+	color: $clr-morado;
+	padding: 0 10px;
+	width: 100%;
+	margin: 10px 0;
+	display: flex inline-block;
+}
+
+.style{
+	font-family: $parrafos;
+	color: $clr-gris;
+}
+.accesorios{
+	display: none;
+}
+
+.check:checked + .accesorios{
+	font-family: $parrafos;
+	color: $clr-gris;
+	display:inline;
+}
+
+.textZone{
+	display: flex;
+}
+
+.botonSend{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 30px;
+	margin: 10px;
+	background: $clr-fiusha;
+	color: $clr-blanco;
+	font-family: $parrafos;
+	font-size: .8rem;
+	font-weight: 600;
+	border: none;
+	transition: .3s ease all;
+	border-radius: 3px;
+	position: relative;
+	overflow: hidden;
+    span{
+        position: relative;
+        z-index: 2;
+        transition: 2s;
+    }
+}
+
+.botonSend:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: $clr-morado;
+	position: absolute;
+	z-index: 1;
+	top: -30px;
+	left: 0;
+	transition: .3s ease-in-out;
+}
+
+.botonSend:hover::after{
+	top: 0;
+}
+
+.mapa{
+	display: flex;
+	width: 100%;
+	padding: 5%;
+}

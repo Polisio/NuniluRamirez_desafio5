@@ -1,0 +1,23 @@
+//footer
+.logoRedes{
+	display: flex;
+	align-items: center;
+}
+
+.logoRedes img{
+	height: 30px;
+	margin-right: 10px;
+}
+
+.label{
+	color:$clr-blanco;
+}
+
+.footerMap{
+	color: $clr-blanco;
+}
+
+.footerMap:hover{
+	color: $clr-fiusha;
+	transition: 0.5s;
+}
