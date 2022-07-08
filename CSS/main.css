@@ -24,7 +24,9 @@ p {
   margin: auto; }
 
 body {
-  margin: 0 auto 60px; }
+  margin: 0 auto 60px;
+  align-items: center;
+  justify-content: center; }
 
 header {
   display: flex;
