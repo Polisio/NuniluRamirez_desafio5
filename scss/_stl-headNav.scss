@@ -8,13 +8,7 @@
 
 //logo
 .logo{
-    display: flex;
-    align-items: center;
-    img{
-        height: 80px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
+    @include logo(flex,center,50px,10px,10px)
 }
 
 //navbar
@@ -34,46 +28,6 @@
 .disp-link{
 	display: flex;
 	flex-direction: row;
-}
-
-.boton{
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 70px;
-	height: 30px;
-	margin: 0 5px;
-	background: $clr-fiusha;
-	color: $clr-blanco;
-	font-family: $principal;
-	font-size: .8rem;
-	font-weight: 600;
-	border: none;
-	transition: .4s ease all;
-	border-radius: 3px;
-	position: relative;
-	overflow: hidden;
-	span{
-		position: relative;
-		z-index: 2;
-		transition: 2s;
-		}
-}
-
-.boton:after{
-	content: "";
-	width: 100%;
-	height: 100%;
-	background: $clr-morado;
-	position: absolute;
-	z-index: 1;
-	top: -30px;
-	left: 0;
-	transition: .3s ease-in-out;
-}
-
-.boton:hover::after{
-	top: 0;
 }
 
 //imagen

@@ -11,14 +11,14 @@
 }
 
 .label{
-	color:$clr-blanco;
+	color: map-get($map: $pal, $key: 'blanco');
 }
 
 .footerMap{
-	color: $clr-blanco;
+	color: map-get($map: $pal, $key: 'blanco');
 }
 
 .footerMap:hover{
-	color: $clr-fiusha;
+	color: map-get($map: $pal, $key: 'fiusha');
 	transition: 0.5s;
 }

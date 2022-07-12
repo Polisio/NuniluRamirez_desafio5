@@ -1,0 +1,16 @@
+//
+@mixin logo ($display,$al-items,$height,$mrg-rgt,$mrg-bttm) {
+    display: $display;
+    align-items: $al-items;
+    img{
+        height: $height;
+        margin-right: $mrg-rgt;
+        margin-bottom: $mrg-bttm;
+    }
+}
+
+@mixin mapa ($display,$width,$padding) {
+    display: $display;
+    width: $width;
+    padding: $padding;    
+}

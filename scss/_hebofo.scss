@@ -11,7 +11,7 @@ a{
 h1, h2{
 	font-family: $principal;
 	text-align: center;
-	color: $clr-fiusha;
+	color: map-get($map:$pal, $key: 'fiusha');
 	font-size: 1.6rem;
 	margin: 10px;
 }
@@ -21,7 +21,7 @@ p{
 	text-align: justify;
 	max-width: 600px;
 	font-size: 1rem;
-	color: $clr-gris;
+	color: map-get($map:$pal, $key: 'gris');
 	padding-left: 20px;
 	padding-right: 20px;
 	margin: auto;
@@ -47,7 +47,7 @@ header{
 	width: 100%;
 	height: 100%;
 	padding: 10px;
-	background: $clr-amarillo;
+	background: map-get($map:$pal, $key: 'amarillo');
 }
 
 
@@ -59,7 +59,7 @@ footer{
 	bottom: 0;
 	width: 100%;
 	height: 60px;
-	background: $clr-morado;
+	background: map-get($map:$pal, $key: 'morado');
 	display: flex;
 	flex-direction: inline;
 	min-height: 50px;

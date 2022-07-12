@@ -2,17 +2,26 @@
 	.galeriaflex{
 		display: none;
 	}
+
 }
 
 @media screen and (min-width: 720px) {
 	.galeriaBoo{
 		display: none;
 	}
+
+	.logo{
+		@include logo(flex,center,80px,10px,10px)
+	}
 }
 
 @media screen and (min-width: 992px) {
 	.galeriaBoo{
 		display: none;
+	}
+
+	.logo{
+		@include logo(flex,center,80px,10px,10px)
 	}
 
 	.spaces{
