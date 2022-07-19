@@ -29,10 +29,9 @@ p{
 
 // body
 body{
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
+    // display: grid;
     // min-height: 100vh;
+	// grid-template-rows: auto 1fr auto;
 	margin: 0 auto 60px;
 	align-items: center;
 	justify-content: center;
@@ -54,7 +53,7 @@ header{
 //footer
 footer{
 	position: absolute;
-	margin-top: 50px;
+	margin-top: auto;
 	left: 0;
 	bottom: 0;
 	width: 100%;

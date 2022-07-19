@@ -79,7 +79,7 @@ header {
 
 footer {
   position: absolute;
-  margin-top: 50px;
+  margin-top: auto;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -197,11 +197,11 @@ footer {
   color: #e01f8f;
   transition: 0.5s; }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 767px) {
   .galeriaflex {
     display: none; } }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .galeriaBoo {
     display: none; }
   .logo {
@@ -212,8 +212,14 @@ footer {
       margin-right: 10px;
       margin-bottom: 10px; } }
 
+@media (min-width: 720px) and (max-width: 991.98px) {
+  .mdoculto {
+    display: none; } }
+
 @media screen and (min-width: 992px) {
   .galeriaBoo {
+    display: none; }
+  .lgoculto {
     display: none; }
   .logo {
     display: flex;
