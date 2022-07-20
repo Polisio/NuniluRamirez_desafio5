@@ -65,7 +65,8 @@ p {
 body {
   margin: 0 auto 60px;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 100px; }
 
 header {
   display: flex;
