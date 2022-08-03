@@ -11,8 +11,7 @@
 		<link rel="shortcut icon" href="img/favicon.jpg">
         <!-- Bootstrap -->
 		
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">		
 		<!-- CSS -->
 		<link rel="stylesheet" href="CSS/main.css">
 		<link rel="stylesheet" href="CSS/fontello.css">
@@ -20,60 +19,61 @@
 
     <body>
         <header class="headerNav">
-			<!-- nav -->
+			<!-- inica nav -->
 			<nav class="navbar navbar-expand-lg navbar-light backnav d-flex justify-content-between">
 				<div class="container-fluid">
 					<a id="logo" href="index.html" class="logo">
-						<img class="logo" src="./src/logo4.png" alt="Logotipo de Nunilu">
-						<img class="logo galeriaflex" src="./src/DisMag_2.png" alt="Logotipo de Diseños Mágicos">
+						<img class="logo" src="./src/LogoNL_4.png" alt="Logotipo de Nunilu">
+					<img class="logo mdoculto" src="./src/DisMag_2.png" alt="Logotipo de Diseños Mágicos">
 					</a>
-					<button class="navbar-toggler bot-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="container navbar-nav me-auto mb-2 mb-lg-0 disp-link">
-							<li class="col-xs-2 nav-item">
-								<a href="views/Nosotros.html">
-									<button class="boton"><span>Nosotros</span></button>
-								</a>
-							</li>
-							<li class="col-xs-2 nav-item">
-								<a href="views/Galeria.html">
-									<button class="boton"><span>Galeria</span></button>
-								</a>
-							</li>
-							<li class="col-xs-2 nav-item">
-								<a href="views/Tienda.html">
-									<button class="boton"><span>Tienda</span></button>
-								</a>
-							</li>
-							<li class="col-xs-2 nav-item">
-								<a href="views/Contacto.html">
-									<button class="boton"><span>Contacto</span></button>
-								</a>
-							</li>
-						</ul>
-					</div>
 				</div>
+				<input id="nav-toggle" type="checkbox">
+					<ul class="link">
+						<li>
+							<a href="./views/Nosotros.html">
+								<button class="boton"><span>Nosotros</span></button>
+							</a>
+						</li>
+						<li>
+							<a href="./views/Galeria.html">
+								<button class="boton"><span>Galeria</span></button>
+							</a>
+						</li>
+						<li>
+							<a href="./views/Tienda.html">
+								<button class="boton"><span>Tienda</span></button>
+							</a>
+						</li>
+						<li>
+							<a href="./views/Contacto.html">
+								<button class="boton"><span>Contacto</span></button>
+							</a>
+						</li>
+					</ul>
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</label>
 			</nav>
-			<!-- end nav -->
+			<!-- termina nav -->
 		</header>
 		
 		<div class="styleHeader">
 			<img src="img/header.jpg" alt="imagen intermedia">
 		</div>
     
-        <main class="container">
+        <!-- <main class="container">
             <div class="row m-4">
 				<div class="col-6">
 					<h1>Tu sueño hecho disfraz</h1>
 					<p> En <b>Nunilu Diseños Mágicos</b>, nos encargamos de Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, illo! Quibusdam ipsa, tenetur debitis quaerat commodi velit magnam assumenda laudantium totam, sunt molestiae quo harum, alias voluptatum perferendis qui necessitatibus.
 					</p>
 				</div>
-            </div>
+            </div> -->
 
             <!-- carousel -->
-            <div id="carouselExampleSlidesOnly" class="row carousel slide m-3" data-bs-ride="carousel">
+            <!-- <div id="carouselExampleSlidesOnly" class="row carousel slide m-3" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./img/13.jpg" class="col-6 d-block w-100 styleImgFlt" alt="disfraz de Minnie Mouse rojo con falda">
@@ -85,17 +85,17 @@
                         <img src="./img/17.jpg" class="col-6 d-block w-100 styleImgFlt" alt="disfraz para niña de Masha de la serie Masha y el oso">
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- end carousel -->
 
-        </main>
+        <!-- </main> -->
 		<div class="container galeriaflex">
 			<div class="row aling-items-center justify-content-between">
 				<!-- card md-lg -->
 				<div class="col-sm-7 col-md-5 col-lg-5">
 					<div>
-						<h2>Así inicia la magia</h1>
+						<h1>Así inicia la magia</h1>
 						<p>Porque todos tuvimos la ilusión, ser un súper héroe, algún personaje de la realeza de las películas o simplemente nuestro animal favorito y solamente lo logramos con un disfraz, es por eso que nace <b>Nunilu</b>, para crear esos sueños por medio de un disfraz.</p>
 					</div>
 					<div class="mdoculto">
@@ -143,12 +143,13 @@
 					<label for="btn-mas" class="icon-plus">	</label>
 				</div>
 			</div>
-			<!-- <div class="logoRedes">
+
+			<div class="logoRedes">
 				<a href="https://www.facebook.com/Nunilu-Diseños-Mágicos-Oficial-101256029230490/" target="_blanc">
 				<img src="./img/logoFB.png" alt="Logotipo de facebook"></a>
 				<a href="https://www.instagram.com" target="_blanc">
 				<img src="./img/logoIG.png" alt="Logotipo de instagram"></a>
-			</div> -->
+			</div>
 		</footer>
         <!-- Scrip js -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

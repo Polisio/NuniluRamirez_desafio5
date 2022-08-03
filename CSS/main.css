@@ -38,6 +38,9 @@
 .botonSend {
   margin: 10px; }
 
+nav div button {
+  color: #655dc6; }
+
 html {
   position: relative;
   min-height: 100%; }
@@ -78,6 +81,23 @@ header {
   padding: 10px;
   background: #fde021; }
 
+footer {
+  position: absolute;
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #655dc6;
+  display: flex;
+  flex-direction: inline;
+  min-height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Handlee", cursive;
+  font-weight: bold; }
+
 .headerNav {
   background-image: url(../src/bgheader.webp);
   background-repeat: no-repeat;
@@ -114,6 +134,85 @@ header {
     max-height: 40%;
     opacity: 60%;
     margin-bottom: 20px; }
+
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 120px;
+  padding: 6% 2%;
+  align-items: center; }
+  nav .logo {
+    float: left;
+    display: flex;
+    align-items: center; }
+  nav .link {
+    float: right;
+    padding: 0 60px;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    nav .link li {
+      list-style: none; }
+    nav .link a {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      cursor: pointer; }
+
+#nav-toggle {
+  position: absolute;
+  top: -100px; }
+
+.icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%); }
+  .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #8605ff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out; }
+
+@media screen and (max-width: 768px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center; }
+  nav .link {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all .5s ease-in-out; }
+  nav :checked ~ .link {
+    bottom: 0; }
+  nav .icon-burger {
+    display: block; }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg); }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg); }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0; } }
 
 .styleImgFlt {
   display: flex;
@@ -225,6 +324,81 @@ header {
 #btn-mas:checked ~ .btn-mas .icon-plus {
   transform: rotate(137deg);
   font-size: 23px; }
+
+.cover {
+  width: 100%;
+  height: 500px;
+  background: var(--color-esqueleto);
+  margin-top: 20px; }
+
+.container__article {
+  max-width: 1000px;
+  padding: 0px 20px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.container__article .box__article {
+  width: 200px;
+  height: 250px;
+  background: var(--color-esqueleto);
+  margin: 20px; }
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px; }
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px; }
+
+.box__footer .logo img {
+  width: 180px; }
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px; }
+
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700; }
+
+.box__footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600; }
+
+.box__footer a:hover {
+  opacity: 0.8; }
+
+.box__footer a .fab {
+  font-size: 20px; }
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px; }
+
+.box__copyright p {
+  margin-top: 20px;
+  color: #7a7a7a; }
+
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a; }
 
 @media screen and (max-width: 767px) {
   .galeriaflex {

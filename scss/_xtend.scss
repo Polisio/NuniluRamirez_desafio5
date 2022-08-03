@@ -51,3 +51,7 @@
 .botonSend:hover::after{
     @extend .boton:hover::after;
 }
+
+nav div button{
+	color: map-get($map: $pal, $key: 'morado' );
+}
