@@ -36,8 +36,8 @@
 .redes a, .icon-plus{
 	display: block;
 	text-decoration: none;
-	background: yellow;
-	color: blueviolet;
+	background: map-get($map:$pal, $key: 'morado');
+	color: map-get($map:$pal, $key: 'blanco');
 	font-size: 23px;
 	width: 50px;
 	height: 50px;
@@ -67,7 +67,7 @@
 
 .icon-plus{
 	cursor: pointer;
-	background: yellow;
+	background: map-get($map:$pal, $key: 'morado');
 	font-size: 23px;
 }
 
@@ -76,92 +76,13 @@
 	font-size: 23px;
 }
 
-///////////////////////////////////////////////////
-.cover{
-    width: 100%;
-    height: 500px;
-    background: var(--color-esqueleto);
-    margin-top: 20px;
+#btn-mas:checked~ .redes a{
+	margin: 20px 0px; 
+	opacity: 1;
+	visibility: visible;
 }
 
-.container__article{
-    max-width: 1000px;
-    padding: 0px 20px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.container__article .box__article{
-    width: 200px;
-    height: 250px;
-    background: var(--color-esqueleto);
-    margin: 20px;
-}
-
-.container__footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.box__footer{
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-}
-
-.box__footer .logo img{
-    width: 180px;
-}
-
-.box__footer .terms{
-    max-width: 350px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #7a7a7a;
-    font-size: 18px;
-}
-
-.box__footer h2{
-    margin-bottom: 30px;
-    color: #343434;
-    font-weight: 700;
-}
-
-.box__footer a{
-    margin-top: 10px;
-    color: #7a7a7a;
-    font-weight: 600;
-}
-
-.box__footer a:hover{
-    opacity: 0.8;
-}
-
-.box__footer a .fab{
-    font-size: 20px;
-}
-
-.box__copyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
-}
-
-.box__copyright p{
-    margin-top: 20px;
-    color: #7a7a7a;
-}
-
-.box__copyright hr{
-    border: none;
-    height: 1px;
-    background-color: #7a7a7a;
+#btn-mas:checked ~ .btn-mas .icon-plus{
+	transform: rotate(137deg);
+	font-size: 23px;
 }

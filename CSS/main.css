@@ -48,7 +48,14 @@ html {
 a {
   text-decoration: none; }
 
-h1, h2 {
+h1 {
+  font-family: "Handlee", cursive;
+  text-align: center;
+  color: #e01f8f;
+  margin: 10px;
+  font-size: 2.1 rem; }
+
+h2 {
   font-family: "Handlee", cursive;
   text-align: center;
   color: #e01f8f;
@@ -71,6 +78,9 @@ body {
   justify-content: center;
   padding-bottom: 100px; }
 
+.margen {
+  margin: 30px 0; }
+
 header {
   display: flex;
   flex-direction: row;
@@ -81,13 +91,13 @@ header {
   padding: 10px;
   background: #fde021; }
 
-footer {
+.styleFooter {
   position: absolute;
   margin-top: auto;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 70px;
   background: #655dc6;
   display: flex;
   flex-direction: inline;
@@ -96,7 +106,8 @@ footer {
   align-items: center;
   padding: 10px;
   font-family: "Handlee", cursive;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: -1; }
 
 .headerNav {
   background-image: url(../src/bgheader.webp);
@@ -231,6 +242,74 @@ nav {
   padding: 10px;
   justify-items: center; }
 
+input[type=radio] {
+  display: none; }
+
+.contenedorSlide {
+  max-width: 1000px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px; }
+
+.contend {
+  width: 100%;
+  max-width: 800px;
+  min-width: 50%px;
+  height: 100%;
+  max-height: 600px;
+  min-height: 50%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.pics {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  align-items: top;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+#pic2:checked ~ .cards #selector-1,
+#pic1:checked ~ .cards #selector-3,
+#pic3:checked ~ .cards #selector-2 {
+  transform: translate(-40%) scale(0.8);
+  opacity: 0.6;
+  z-index: 0; }
+
+#pic3:checked ~ .cards #selector-1,
+#pic1:checked ~ .cards #selector-2,
+#pic2:checked ~ .cards #selector-3 {
+  transform: translate(40%) scale(0.8);
+  opacity: 0.6;
+  z-index: 0; }
+
+#pic1:checked ~ .cards #selector-1,
+#pic2:checked ~ .cards #selector-2,
+#pic3:checked ~ .cards #selector-3 {
+  transform: translate(0) scale(1);
+  z-index: 1; }
+
 .formStyle {
   font-family: "Handlee", cursive;
   color: #655dc6;
@@ -291,8 +370,8 @@ nav {
 .redes a, .icon-plus {
   display: block;
   text-decoration: none;
-  background: yellow;
-  color: blueviolet;
+  background: #655dc6;
+  color: #ffffff;
   font-size: 23px;
   width: 50px;
   height: 50px;
@@ -318,87 +397,21 @@ nav {
 
 .icon-plus {
   cursor: pointer;
-  background: yellow;
+  background: #655dc6;
   font-size: 23px; }
 
 #btn-mas:checked ~ .btn-mas .icon-plus {
   transform: rotate(137deg);
   font-size: 23px; }
 
-.cover {
-  width: 100%;
-  height: 500px;
-  background: var(--color-esqueleto);
-  margin-top: 20px; }
+#btn-mas:checked ~ .redes a {
+  margin: 20px 0px;
+  opacity: 1;
+  visibility: visible; }
 
-.container__article {
-  max-width: 1000px;
-  padding: 0px 20px;
-  margin: auto;
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.container__article .box__article {
-  width: 200px;
-  height: 250px;
-  background: var(--color-esqueleto);
-  margin: 20px; }
-
-.container__footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 100px; }
-
-.box__footer {
-  display: flex;
-  flex-direction: column;
-  padding: 40px; }
-
-.box__footer .logo img {
-  width: 180px; }
-
-.box__footer .terms {
-  max-width: 350px;
-  margin-top: 20px;
-  font-weight: 500;
-  color: #7a7a7a;
-  font-size: 18px; }
-
-.box__footer h2 {
-  margin-bottom: 30px;
-  color: #343434;
-  font-weight: 700; }
-
-.box__footer a {
-  margin-top: 10px;
-  color: #7a7a7a;
-  font-weight: 600; }
-
-.box__footer a:hover {
-  opacity: 0.8; }
-
-.box__footer a .fab {
-  font-size: 20px; }
-
-.box__copyright {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-  padding: 0px 40px; }
-
-.box__copyright p {
-  margin-top: 20px;
-  color: #7a7a7a; }
-
-.box__copyright hr {
-  border: none;
-  height: 1px;
-  background-color: #7a7a7a; }
+#btn-mas:checked ~ .btn-mas .icon-plus {
+  transform: rotate(137deg);
+  font-size: 23px; }
 
 @media screen and (max-width: 767px) {
   .galeriaflex {
