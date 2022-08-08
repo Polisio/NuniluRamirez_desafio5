@@ -123,15 +123,22 @@ header {
     margin-right: 10px;
     margin-bottom: 10px; }
 
+.logosm {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 325px) {
+    .logosm {
+      display: none; } }
+  .logosm img {
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+
 .backnav {
   width: 100%; }
 
 .bot-nav {
   margin-bottom: 5px; }
-
-.just-nav {
-  display: flex;
-  justify-items: space-between; }
 
 .disp-link {
   display: flex;
@@ -319,12 +326,36 @@ nav {
   cursor: pointer;
   transform: scale(1.04); }
 
+@media only screen and (min-width: 768px) {
+  .carouselSmall {
+    display: none; }
+    .carouselSmall .logo {
+      display: flex;
+      align-items: center; }
+      .carouselSmall .logo img {
+        height: 80px;
+        margin-right: 10px;
+        margin-bottom: 10px; } }
+
+@media only screen and (max-width: 767px) {
+  .carousel__small {
+    display: none; } }
+
 .formStyle {
   font-family: "Handlee", cursive;
   color: #655dc6;
   padding: 0px;
   width: 100%;
   text-align: center;
+  margin: 10px 0;
+  display: inline-block;
+  justify-items: center; }
+
+.formStyle_1 {
+  font-family: "Handlee", cursive;
+  color: #655dc6;
+  padding: 0px;
+  width: 100%;
   margin: 10px 0;
   display: inline-block;
   justify-items: center; }
@@ -366,9 +397,19 @@ nav {
   height: 30px;
   margin-right: 10px; }
 
+.labelsm {
+  color: #ffffff;
+  text-align: center; }
+  @media only screen and (max-width: 325px) {
+    .labelsm {
+      display: none; } }
+
 .label {
   color: #ffffff;
   text-align: center; }
+  @media only screen and (min-width: 326px) {
+    .label {
+      display: none; } }
 
 .footerMap {
   color: #ffffff; }
@@ -427,7 +468,8 @@ nav {
 .icon-plus {
   cursor: pointer;
   background: #655dc6;
-  font-size: 23px; }
+  font-size: 23px;
+  z-index: 10001; }
 
 #btn-mas:checked ~ .btn-mas .icon-plus {
   transform: rotate(137deg);
@@ -448,17 +490,6 @@ nav {
 
 @media screen and (min-width: 768px) {
   .galeriaBoo {
-    display: none; }
-  .logo {
-    display: flex;
-    align-items: center; }
-    .logo img {
-      height: 80px;
-      margin-right: 10px;
-      margin-bottom: 10px; } }
-
-@media (min-width: 720px) and (max-width: 991.98px) {
-  .mdoculto {
     display: none; } }
 
 @media screen and (min-width: 992px) {

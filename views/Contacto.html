@@ -15,52 +15,55 @@
 		
 		<!-- CSS -->
 		<link rel="stylesheet" href="../CSS/main.css">
+		<link rel="stylesheet" href="../CSS/fontello.css">
 	</head>
+	
 	<body>
-		<header class="headerNav">
-			<!-- nav -->
-
-			<nav class="navbar navbar-expand-lg navbar-light backnav d-flex justify-content-between">
+		<header class="headerNav" id="inicio">
+			<!-- inica nav -->
+			<nav class="navbar navbar-expand-lg navbar-light backnav d-flex justify-content-around">
 				<div class="container-fluid">
 					<a id="logo" href="../index.html" class="logo">
-						<img class="logo" src="../src/logo4.png" alt="Logotipo de Nunilu">
-						<img class="logo" src="../src/DisMag_2.png" alt="Logotipo de Diseños Mágicos">
+						<img class="logo" src="../src/LogoNL_4.png" alt="Logotipo de Nunilu">
+					<img class="logo mdoculto" src="../src/DisMag_2.png" alt="Logotipo de Diseños Mágicos">
 					</a>
-					<button class="navbar-toggler bot-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0 disp-link">
-							<li class="nav-item">
-								<a href="Nosotros.html">
-									<button class="boton"><span>Nosotros</span></button>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="Galeria.html">
-									<button class="boton"><span>Galeria</span></button>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="Tienda.html">
-									<button class="boton"><span>Tienda</span></button>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="Contacto.html">
-									<button class="boton"><span>Contacto</span></button>
-								</a>
-							</li>
-						</ul>
-					</div>
 				</div>
+				<input id="nav-toggle" type="checkbox">
+					<ul class="link">
+						<li>
+							<a href="../views/Nosotros.html">
+								<button class="boton"><span>Nosotros</span></button>
+							</a>
+						</li>
+						<li>
+							<a href="../views/Galeria.html">
+								<button class="boton"><span>Galeria</span></button>
+							</a>
+						</li>
+						<li>
+							<a href="../views/Tienda.html">
+								<button class="boton"><span>Tienda</span></button>
+							</a>
+						</li>
+						<li>
+							<a href="../views/Contacto.html">
+								<button class="boton"><span>Contacto</span></button>
+							</a>
+						</li>
+					</ul>
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</label>
 			</nav>
+			<!-- termina nav -->
+		</header>
 
-			<!-- end nav -->
-	</header>
 	<div class="styleHeader">
 		<img src="../img/header.jpg" alt="imagen intermedia">
 	</div>
+
 	<main class="container cont-grid">
 		<div class="row map-g">
 			<div>
@@ -78,21 +81,21 @@
 				<div>
 					<form class="g-3 mt-3">
 						<div class="col-11">
-							<label for="nombre" class="formStyle">Nombre</label>
+							<label for="nombre" class="formStyle_1">Nombre</label>
 							<input type="text" class="form-control" id="nombre" placeholder="Laura Marcela García Corcuera y Rivadeneira">
 						</div>
 						<div class="col-11">
-							<label for="email" class="formStyle">E-mail</label>
+							<label for="email" class="formStyle_1">E-mail</label>
 							<input type="email" class="form-control" id="email" placeholder="layoyis@mail.com">
 						</div>
 						<div class="col-11">
-							<label for="telefono" class="formStyle">Teléfono</label>
+							<label for="telefono" class="formStyle_1">Teléfono</label>
 							<input type="text" class="form-control" id="telefono" placeholder="3355441166">
 						</div>
 					</form>
 				</div>
 				<div>
-					<label class="formStyle" for="mensaje"> Mensaje</label>
+					<label class="formStyle_1" for="mensaje"> Mensaje</label>
 					<br>
 					<textarea class="textZone col-11 form-control" name="" id="mensaje" cols="30" rows="10"></textarea>
 					<button class="botonSend" type="reset"><span>Cancelar</span></button>
@@ -101,18 +104,35 @@
 			</formaction=>
 		</div>
 	</main>
-	<footer>
+	
+	<div class="contenedor">
+		<input type="checkbox" id="btn-mas">
+		<div class="redes">
+			<a href="https://www.facebook.com/Nunilu-Dise%C3%B1os-M%C3%A1gicos-Oficial-101256029230490" class="icon-facebook" target="_blank"></a>
+			<a href="https://www.instagram.com" class="icon-instagram" target="_blank"></a>
+			<a href="https://api.whatsapp.com/send?phone=523411677138" class="icon-whatsapp" target="_blank"></a>
+			<a href="Contacto.html#Mapa" class="icon-location"></a>
+		</div>
+		<div class="btn-mas">
+			<label for="btn-mas" class="icon-plus">	</label>
+		</div>
+	</div>
+
+	<div class="contenedorup">
 		<div>
-			<label class="label"><b>Visita nuestra tienda:</b></label>
-			<a class="footerMap" href="Contacto.html#Mapa">Mapa</a>
+			<a href="#inicio">
+				<label class="icon-angle-circled-up"></label>
+			</a>
 		</div>
-		<div class="logoRedes">
-			<a href="https://www.facebook.com/Nunilu-Diseños-Mágicos-Oficial-101256029230490/" target="_blanc">
-			<img src="../img/logoFB.png" alt="Logotipo de facebook"></a>
-			<a href="https://www.instagram.com" target="_blanc">
-			<img src="../img/logoIG.png" alt="Logotipo de instagram"></a>
-		</div>
-	</footer>
+	</div>
+
+<footer class="styleFooter">
+	<div class="d-flex justify-content-center">
+		<label class="label"><b>¡Nunilu! La Fábrica de sueños</b>
+			<br>Contáctanos en nuetras redes sociales 
+		</label>
+	</div>
+</footer>
 		<!-- Scrip js -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<!-- end Scrip js -->

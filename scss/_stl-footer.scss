@@ -10,7 +10,18 @@
 	margin-right: 10px;
 }
 
+.labelsm{
+	@include small {
+		display: none;
+	}
+	color: map-get($map: $pal, $key: 'blanco');
+	text-align: center;
+}
+
 .label{
+	@include small1{
+		display: none;
+	}
 	color: map-get($map: $pal, $key: 'blanco');
 	text-align: center;
 }
@@ -83,6 +94,7 @@
 	cursor: pointer;
 	background: map-get($map:$pal, $key: 'morado');
 	font-size: 23px;
+	z-index: 10001;
 }
 
 #btn-mas:checked ~ .btn-mas .icon-plus{

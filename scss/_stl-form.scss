@@ -10,6 +10,16 @@
 	justify-items: center;
 }
 
+.formStyle_1{
+	font-family: $principal;
+	color: map-get($map:$pal, $key: 'morado');
+	padding: 0px;
+	width: 100%;
+	margin: 10px 0;
+	display: inline-block;
+	justify-items: center;
+}
+
 .style{
 	font-family: $parrafos;
 	color: map-get($map: $pal, $key: 'gris');

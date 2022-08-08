@@ -112,3 +112,20 @@
 	cursor: pointer;
 	transform: scale(1.04);
 }
+
+// mixin
+
+.carouselSmall{
+	@include carousel {
+		display: none;
+		.logo{
+			@include logo(flex,center,80px,10px,10px)
+		}
+	}
+}
+
+.carousel__small{
+	@include carousel1 {
+		display: none;
+	}
+}

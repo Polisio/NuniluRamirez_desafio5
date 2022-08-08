@@ -11,18 +11,22 @@
     @include logo(flex,center,50px,10px,10px)
 }
 
+.logosm{
+    @include small {
+        display: none;
+    }
+    @include logo(flex,center,50px,10px,10px)
+
+}
+
 //navbar
 .backnav{
 	width: 100%;
+
 }
 
 .bot-nav{
 	margin-bottom: 5px;
-}
-
-.just-nav{
-	display: flex;
-	justify-items: space-between;
 }
 
 .disp-link{
