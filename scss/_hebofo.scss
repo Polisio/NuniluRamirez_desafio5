@@ -11,9 +11,10 @@ a{
 h1{
 	font-family: $principal;
 	text-align: center;
-	color: map-get($map:$pal, $key: 'fiusha');
-	margin: 10px;
-	font-size: 2.1 rem;
+	color: map-get($map:$pal, $key: 'blanco');
+	margin-top: 30px;
+	font-size: 2.3 rem;
+	text-shadow: 1px 1px 4px map-get($map:$pal, $key: 'morado'), 0 0 25px map-get($map:$pal, $key: 'morado'), 0 0 5px map-get($map:$pal, $key: 'morado')
 }
 
 h2{
@@ -26,7 +27,7 @@ h2{
 
 p{
 	font-family: $parrafos;
-	text-align: justify;
+	text-align: center;
 	max-width: 600px;
 	font-size: 1rem;
 	color: map-get($map:$pal, $key: 'gris');
@@ -72,11 +73,10 @@ header{
 	display: flex;
 	flex-direction: inline;
 	min-height: 50px;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	padding: 10px;
 	font-family: $principal;
-	font-weight: bold;
 	z-index: -1;
 }
 

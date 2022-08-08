@@ -2,11 +2,12 @@
 .formStyle{
 	font-family: $principal;
 	color: map-get($map:$pal, $key: 'morado');
-	padding: 0 5px;
+	padding: 0px;
 	width: 100%;
+	text-align: center;
 	margin: 10px 0;
 	display: inline-block;
-	justify-content: center;
+	justify-items: center;
 }
 
 .style{
@@ -31,4 +32,14 @@
 
 .mapa{
 	@include mapa (flex,100%,5%)
+}
+
+
+.textfnl{
+	color: map-get($map: $pal, $key: 'morado');
+}
+
+.textfnl:hover{
+	color: map-get($map: $pal, $key: 'fiusha');
+	transition: 0.5s;
 }

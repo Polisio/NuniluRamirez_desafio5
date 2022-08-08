@@ -18,7 +18,7 @@
     </head>
 
     <body>
-        <header class="headerNav">
+        <header class="headerNav" id="inicio">
 			<!-- inica nav -->
 			<nav class="navbar navbar-expand-lg navbar-light backnav d-flex justify-content-between">
 				<div class="container-fluid">
@@ -59,9 +59,9 @@
 			<!-- termina nav -->
 		</header>
 		
-		<!-- <div class="styleHeader">
+		<div class="styleHeader">
 			<img src="img/header.jpg" alt="imagen intermedia">
-		</div> -->
+		</div>
 
 		<div>
 			<h1><b>Los sueños se hacen realidad en Nunilu</b></h1>
@@ -69,102 +69,114 @@
 
 		<!-- inicia slider -->
 
-		<div class="contenedorSlide">
-			<div class="contend">
-				<input type="radio" name="slider" id="pic1" checked>
-				<input type="radio" name="slider" id="pic2">
-				<input type="radio" name="slider" id="pic3">
-			
-				<div class="cards">
-					<label for="pic1" class="card" id="selector-1">
-						<img class="pics" src="img/13.jpg" alt="Disfraz de Minnie Mouse para niña con falda">
-					</label>
-					<label for="pic2" class="card" id="selector-2">
-						<img class="pics" src="img/18.jpg" alt="Disfraz de Santa Claus rojo con falda para niña">
-					</label>
-					<label for="pic3" class="card" id="selector-3">
-						<img class="pics" src="img/12.jpg" alt="Disfraz de chilindrina">
-					</label>
-				</div>
-			</div>
-		</div>
+		<div class="container">
+			<div class="row">
 
-		<!-- finaliza slider -->
-
-		<!-- <div class="container galeriaflex aling-items-center"> -->
-			<!-- <div class="row justify-content-between"> -->
-				<!-- card md-lg -->
-				<!-- <div class="col-sm-7 col-md-5 col-lg-5">
-					<div class="mdoculto">
-						<p>Crear en nuestros clientes alegría y satisfacción al corresponder la confianza que depositan en nosotros para hacer realidad el sueño de convertirse en el súper héroe, la princesa o el personaje que siempre han querido ser, porque siempre somos niños, no importa la edad.<br>
-						Con esto, lograremos convertirnos en la fábrica de sueños preferida de todo México. </p>
+				<div class="contenedorSlide col-12 col-lg-6 col-xl-6 col-xxl-6 ">
+					<div class="contend">
+						<input type="radio" name="slider" id="pic1" checked>
+						<input type="radio" name="slider" id="pic2">
+						<input type="radio" name="slider" id="pic3">
+					
+						<div class="cards">
+							<label for="pic1" class="card" id="selector-1">
+								<img class="pics" src="img/13.jpg" alt="Disfraz de Minnie Mouse para niña con falda">
+							</label>
+							<label for="pic2" class="card" id="selector-2">
+								<img class="pics" src="img/18.jpg" alt="Disfraz de Santa Claus rojo con falda para niña">
+							</label>
+							<label for="pic3" class="card" id="selector-3">
+								<img class="pics" src="img/12.jpg" alt="Disfraz de chilindrina">
+							</label>
+						</div>
 					</div>
-				</div> -->
-				<!-- end card md-lg -->
-
-				<!-- carousel -->
-				<!-- <div class="margen col-sm-5 col-md-6 col-lg-6">
-					<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="./img/16.jpg" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-item">
-								<img src="./img/15.jpg" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-item">
-								<img src="./img/14.jpg" class="d-block w-100" alt="...">
+				</div>
+				
+				<!-- <div id="carouselExampleCaptions" class="carousel slide align-items-center" data-bs-ride="false">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/13.jpg" class="d-block w-100 pics" alt="...">
+							<div class="carousel-caption d-none d-xxl-block">
+								<h5>First slide label</h5>
+								<p>Some representative placeholder content for the first slide.</p>
 							</div>
 						</div>
-					</div> -->
+						<div class="carousel-item">
+							<img src="img/18.jpg" class="d-block w-100 pics" alt="...">
+							<div class="carousel-caption d-none d-xxl-block">
+								<h5>Second slide label</h5>
+								<p>Some representative placeholder content for the second slide.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="img/12.jpg" class="d-block w-100 pics" alt="...">
+							<div class="carousel-caption d-none d-xxl-block">
+								<h5>Third slide label</h5>
+								<p>Some representative placeholder content for the third slide.</p>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div> -->
 
-				<!-- </div> -->
-				<!-- end carousel -->
-			<!-- </div> -->
-		<!-- </div> -->
-		
-		<div class="contenedor">
-			<input type="checkbox" id="btn-mas">
-			<div class="redes">
-				<a href="https://www.facebook.com/Nunilu-Dise%C3%B1os-M%C3%A1gicos-Oficial-101256029230490" class="icon-facebook" target="_blank"></a>
-				<a href="https://www.instagram.com" class="icon-instagram" target="_blank"></a>
-				<a href="https://api.whatsapp.com/send?phone=525532320222" class="icon-whatsapp" target="_blank"></a>
-			</div>
-			<div class="btn-mas">
-				<label for="btn-mas" class="icon-plus">	</label>
+				<div class="col-12 col-lg-6 col-xl-6 col-xxl-6 d-flex align-items-center">
+					<div>
+						<h2>¡Disfraces para todas las ocasiones!</h2>
+							
+						<p><br>
+							<a href="./views/Galeria.html" class="col-12 textfnl">
+								<b>¡Mira nuestro catálogo en línea!</b>
+							</a>
+						Contamos con una gran variedad de disfraces para todas las ocasiones, desde carnavales y obras de teatro, hasta cosplay y bailes infantiles. 
+						<br><br> ¡Nuestros disfraces son perfectos para cualquier evento! </p>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
 
+		
+		<!-- finaliza slider -->
 
+			<div class="contenedor">
+				<input type="checkbox" id="btn-mas">
+				<div class="redes">
+					<a href="https://www.facebook.com/Nunilu-Dise%C3%B1os-M%C3%A1gicos-Oficial-101256029230490" class="icon-facebook" target="_blank"></a>
+					<a href="https://www.instagram.com" class="icon-instagram" target="_blank"></a>
+					<a href="https://api.whatsapp.com/send?phone=523411677138" class="icon-whatsapp" target="_blank"></a>
+					<a href="./views/Contacto.html#Mapa" class="icon-location"></a>
+				</div>
+				<div class="btn-mas">
+					<label for="btn-mas" class="icon-plus">	</label>
+				</div>
+			</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			<div class="contenedorup">
+				<div>
+					<a href="#inicio">
+						<label class="icon-angle-circled-up"></label>
+					</a>
+				</div>
+			</div>
 
         <footer class="styleFooter">
-			<div>
-				<label class="label"><b>Visita nuestra tienda:</b></label>
-				<a class="footerMap" href="Contacto.html#Mapa">Mapa</a>
+			<div class="d-flex justify-content-center">
+				<label class="label"><b>¡Nunilu! La Fábrica de sueños</b>
+					<br>Contáctanos en nuetras redes sociales 
+				</label>
 			</div>
 		</footer>
 	

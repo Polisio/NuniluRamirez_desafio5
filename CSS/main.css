@@ -51,9 +51,10 @@ a {
 h1 {
   font-family: "Handlee", cursive;
   text-align: center;
-  color: #e01f8f;
-  margin: 10px;
-  font-size: 2.1 rem; }
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 2.3 rem;
+  text-shadow: 1px 1px 4px #655dc6, 0 0 25px #655dc6, 0 0 5px #655dc6; }
 
 h2 {
   font-family: "Handlee", cursive;
@@ -64,7 +65,7 @@ h2 {
 
 p {
   font-family: "Original Surfer", cursive;
-  text-align: justify;
+  text-align: center;
   max-width: 600px;
   font-size: 1rem;
   color: #4f4d63;
@@ -102,11 +103,10 @@ header {
   display: flex;
   flex-direction: inline;
   min-height: 50px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   font-family: "Handlee", cursive;
-  font-weight: bold;
   z-index: -1; }
 
 .headerNav {
@@ -143,8 +143,7 @@ header {
   .styleHeader img {
     width: 100%;
     max-height: 40%;
-    opacity: 60%;
-    margin-bottom: 20px; }
+    opacity: 60%; }
 
 nav {
   position: fixed;
@@ -152,8 +151,8 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  height: 120px;
-  padding: 6% 2%;
+  height: 90px;
+  padding: 0% 2%;
   align-items: center; }
   nav .logo {
     float: left;
@@ -189,7 +188,7 @@ nav {
   .icon-burger .line {
     width: 30px;
     height: 5px;
-    background-color: #8605ff;
+    background-color: #655dc6;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out; }
@@ -242,9 +241,6 @@ nav {
   padding: 10px;
   justify-items: center; }
 
-input[type=radio] {
-  display: none; }
-
 .contenedorSlide {
   max-width: 1000px;
   height: 500px;
@@ -256,7 +252,7 @@ input[type=radio] {
 
 .contend {
   width: 100%;
-  max-width: 800px;
+  *max-width: 800px;
   min-width: 50%px;
   height: 100%;
   max-height: 600px;
@@ -265,6 +261,8 @@ input[type=radio] {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .contend input[type=radio] {
+    display: none; }
 
 .cards {
   position: relative;
@@ -310,14 +308,26 @@ input[type=radio] {
   transform: translate(0) scale(1);
   z-index: 1; }
 
+.modalimg {
+  object-fit: cover;
+  filter: grayscale(70%) blur(1px);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
+  transition: transform 0.5s; }
+
+.modalimg:hover {
+  filter: none;
+  cursor: pointer;
+  transform: scale(1.04); }
+
 .formStyle {
   font-family: "Handlee", cursive;
   color: #655dc6;
-  padding: 0 5px;
+  padding: 0px;
   width: 100%;
+  text-align: center;
   margin: 10px 0;
   display: inline-block;
-  justify-content: center; }
+  justify-items: center; }
 
 .style {
   font-family: "Original Surfer", cursive;
@@ -341,6 +351,13 @@ input[type=radio] {
   width: 100%;
   padding: 5%; }
 
+.textfnl {
+  color: #655dc6; }
+
+.textfnl:hover {
+  color: #e01f8f;
+  transition: 0.5s; }
+
 .logoRedes {
   display: flex;
   align-items: center; }
@@ -350,7 +367,8 @@ input[type=radio] {
   margin-right: 10px; }
 
 .label {
-  color: #ffffff; }
+  color: #ffffff;
+  text-align: center; }
 
 .footerMap {
   color: #ffffff; }
@@ -367,7 +385,17 @@ input[type=radio] {
   bottom: 10px;
   right: 10px; }
 
-.redes a, .icon-plus {
+.contenedorup {
+  position: fixed;
+  bottom: 10px;
+  left: 10px; }
+
+.icon-angle-circled-up {
+  cursor: pointer;
+  background: #655dc6;
+  font-size: 23px; }
+
+.redes a, .icon-plus, .icon-angle-circled-up {
   display: block;
   text-decoration: none;
   background: #655dc6;
@@ -377,13 +405,14 @@ input[type=radio] {
   height: 50px;
   line-height: 50px;
   text-align: center;
+  justify-content: center;
   border-radius: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
   transition: all 500ms ease; }
 
 .redes a:hover {
-  background: yellowgreen;
-  color: black; }
+  background: #fde021;
+  color: #655dc6; }
 
 .redes a {
   margin: -20px 0;

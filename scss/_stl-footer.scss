@@ -12,6 +12,7 @@
 
 .label{
 	color: map-get($map: $pal, $key: 'blanco');
+	text-align: center;
 }
 
 .footerMap{
@@ -33,7 +34,19 @@
 	right: 10px;
 }
 
-.redes a, .icon-plus{
+.contenedorup{
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+}
+
+.icon-angle-circled-up{
+	cursor: pointer;
+	background: map-get($map:$pal, $key: 'morado');
+	font-size: 23px;
+}
+
+.redes a, .icon-plus, .icon-angle-circled-up{
 	display: block;
 	text-decoration: none;
 	background: map-get($map:$pal, $key: 'morado');
@@ -43,14 +56,15 @@
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
+	justify-content: center;
 	border-radius: 50%;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
 	transition: all 500ms ease;
 }
 
 .redes a:hover{
-	background: yellowgreen;
-	color: black;
+	background: map-get($map:$pal, $key: 'amarillo');
+	color: map-get($map:$pal, $key: 'morado');;
 }
 
 .redes a{
