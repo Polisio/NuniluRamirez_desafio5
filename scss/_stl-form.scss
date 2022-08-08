@@ -6,8 +6,9 @@
 	width: 100%;
 	text-align: center;
 	margin: 10px 0;
-	display: inline-block;
+	display: block;
 	justify-items: center;
+	align-items: center;
 }
 
 .formStyle_1{
@@ -24,8 +25,27 @@
 	font-family: $parrafos;
 	color: map-get($map: $pal, $key: 'gris');
 	display: inline-block;
-	justify-content: center;
+	align-items: left;
 }
+
+.cont-grid{
+	@include large{
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"forma forma forma mapa mapa";
+	justify-items: stretch;
+	}
+	.forma{
+		grid-area: forma;
+	}
+	.map-g{
+		grid-area: mapa;
+	}
+}
+
 .accesorios{
 	display: none;
 }

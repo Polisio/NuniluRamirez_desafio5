@@ -36,6 +36,14 @@ p{
 	margin: auto;
 }
 
+p{
+	@include small{
+		font-size: 0.8rem;
+		text-align: justify;
+		padding: 0;
+	}
+}
+
 // body
 body{
 	margin: 0 auto 60px;

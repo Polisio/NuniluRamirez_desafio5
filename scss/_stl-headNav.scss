@@ -8,15 +8,17 @@
 
 //logo
 .logo{
-    @include logo(flex,center,50px,10px,10px)
+    @include logo(flex,center,80px,10px,10px)
+    @include media{
+        @include logo(flex,center,60px,10px,10px)
+    }
 }
+
 
 .logosm{
     @include small {
         display: none;
     }
-    @include logo(flex,center,50px,10px,10px)
-
 }
 
 //navbar
